@@ -1,0 +1,54 @@
+{
+	"name": "admin-schema-terminal",
+	"version": "0.0.0",
+	"license": "MIT",
+	"bin": "dist/cli.js",
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"build": "tsc && chmod +x dist/cli.js",
+		"start": "npm run build && dist/cli.js"
+	},
+	"files": [
+		"dist/cli.js"
+	],
+	"dependencies": {
+		"@jsonforms/core": "^3.0.0",
+		"@jsonforms/react": "^3.0.0",
+		"ink": "3.2.0",
+		"lodash": "^4.17.21",
+		"meow": "^9.0.0",
+		"react": "17.0.2"
+	},
+	"ava": {
+		"typescript": {
+			"extensions": [
+				"tsx"
+			],
+			"rewritePaths": {
+				"source/": "dist/"
+			}
+		}
+	},
+	"xo": {
+		"extends": "xo-react",
+		"rules": {
+			"react/prop-types": "off"
+		}
+	},
+	"devDependencies": {
+		"@ava/typescript": "^4.0.0",
+		"@sindresorhus/tsconfig": "^3.0.1",
+		"@types/lodash": "^4.14.191",
+		"@types/react": "^18.0.28",
+		"ava": "^5.2.0",
+		"chalk": "^4.1.2",
+		"eslint-config-xo-react": "^0.27.0",
+		"eslint-plugin-react": "^7.32.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"ink-testing-library": "^3.0.0",
+		"typescript": "^5.0.2",
+		"xo": "^0.39.1"
+	}
+}

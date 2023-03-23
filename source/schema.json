@@ -1,0 +1,23 @@
+{
+	"type": "object",
+	"properties": {
+		"title": {
+			"type": "string",
+			"description": "card Title",
+			"maxLength": 15
+		},
+		"subtitle": {
+			"type": "string"
+		},
+		"text": {
+			"type": "string"
+		},
+		"link": {
+			"type": "string"
+		},
+		"link2": {
+			"type": "string"
+		}
+	},
+	"required": ["title", "subtitle", "text", "link", "link2"]
+}
