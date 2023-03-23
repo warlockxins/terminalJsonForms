@@ -7,6 +7,8 @@ Run by:
 npm run start
 ```
 
+![preview](images/preview.png)
+
 ## App structure
 Folder `source/cliRenderers` is a copy of JsonForms Vanilla renderers. Slightly adjusted to use `Ink` components.
 
